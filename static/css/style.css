@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ba57c7;
+    background: linear-gradient(184deg, rgba(186, 87, 199, 0.88) 37%, rgba(237, 221, 83, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.siteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.card-render {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.card-render.hidden{
+    display: none;
+}
+
+.animate {
+    animation: slideUp 0.2s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.display-card {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+    background-color: rgba(250, 223, 242, 1);
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.4);
+}
+
+.nav-bar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    background-color: purple;
+    z-index: 100;
+}
+
+.site-message {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(26px, 15vw, 40px);
+}
+
+.nav-button-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0.3;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-button-design {
+    width: 30%;
+    height: 60%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    min-height: 20vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 11%;
+}
+
+.mainPageTitle {
+    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+    font-weight: bold;
+    font-size: clamp(30px, 10vw, 60px);
+}
+
+.cauldronImg {
+    width: 80px;
+    height: auto;
+}
+
+.infoSection {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoTab {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.windowText {
+    font-size: clamp(18px, 2vw, 25px);
+    padding: 2%;
+    text-align: center;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.buttonContent {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    gap: 3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceButton {
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.choiceButton:hover {
+    background-color: purple;
+}
+
+.butImgContainer img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.butTitleDiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.titleHouse {
+    flex: .1;
+    width: 50%;
+    background-color: #ba57c7;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+.buttonTitle {
+    font-size: clamp(15px, 3vw, 25px);
+}
+
+.moreButtons {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    gap: 3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.largeButton {
+    position: relative;
+    display: flex;
+    width: 35%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.largeButton:hover {
+    background-color: purple;
+}
+
+.service-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.article-head {
+    display: flex;
+    flex: .75;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+}
+
+.service-title {
+    font-size: clamp(25px, 4vw, 40px);
+}
+
+.exit-button {
+    border-radius: 4px;
+    background-color: rgb(212, 148, 255);
+}
+
+.exit-button:hover {
+    background-color: rgb(237, 221, 83);
+    transform: scale(1.1);
+}
+.service-text {
+    font-size: clamp(18px, 1.5vw, 25px);
+}
+
+.main-list {
+    font-size: clamp(18px, 1.5vw, 25px);
+}
+
+.button-div {
+    display: flex;
+    flex: 1.5;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.schedule-btn1 {
+    border-radius: 6px;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    background-color: rgb(212, 148, 255);
+}
+
+.schedule-btn1:hover {
+    background-color: rgb(237, 221, 83);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.price { 
+    font-size: clamp(16px, 1.3vw, 24px);
+}
+
+.bolded-price {
+    font-weight: bold;
+}
+
+.before-after {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+}
+
+.before-after-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}

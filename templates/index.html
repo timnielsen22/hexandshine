@@ -1,0 +1,171 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+
+<base target = "_top">
+
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+<meta charset = "UTF-8">
+
+<link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
+
+</head>
+<body>
+
+<div class ="background"></div>
+
+<div class = "siteContainer">
+
+    <div class = "card-render hidden" id = "card1">
+        <div class = "display-card" id = "service-container"></div>
+    </div>
+
+    <header class = "nav-bar">
+
+        <div class = "site-message">
+            Quality cleaning so good, its like magic!
+        </div>
+
+        <div class = "nav-button-container">
+
+            <button class = "nav-button-design" onclick = "goHome()">
+                Home
+            </button>
+                
+            <button class = "nav-button-design" onclick = "goabout()">
+                About
+            </button>
+
+            <button class = "nav-button-design" onclick = "goContact()">
+                Contact
+            </button>
+
+        </div>
+    </header>
+
+    <div class = "header">
+
+        <h1 class ="mainPageTitle">Hex and Shine</h1>
+
+        <div>
+            <img class = "cauldronImg" src = "/static/images/cauldron.png">
+        </div>
+    
+    </div>
+
+
+    <section class = "infoSection">
+
+        <div class = "infoTab">
+            <p class = "windowText">Hex and Shine is a <span class = "bolded">San Diego, CA</span> based home and business cleaning and landscaping solutions startup.
+                The main objective of any of Hex and Shine's services is <span class = "bolded">quality.</span> From pristine landscaping, to shining floors
+                and glistening counterops. Hex and Shine will provide the utmost of care and cleanliness to any home and business in need. Click on a service 
+                below to find out more.
+            </p>
+        </div>
+
+    </section>
+
+    <div class = "buttonContent">
+
+        <div class = "choiceButton" id = "service-one">
+
+            <div class = "butImgContainer">
+                <img class = "buttonImg" src = "/static/images/landscaper.png">
+            </div>
+
+            <div class = "butTitleDiv">
+                <div class = "titleHouse">
+                    <h3 class = "buttonTitle">Landscaping </h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "choiceButton" id ="service-two">
+
+            <div class = "butImgContainer">
+                <img class = "buttonImg" src = "/static/images/cleaning.png">
+            </div>
+
+            <div class = "butTitleDiv">
+                <div class = "titleHouse">
+                    <h3 class = "buttonTitle">Cleaning</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "choiceButton" id = "service-three">
+
+            <div class = "butImgContainer">
+                <img class = "buttonImg" src = "/static/images/toys.png">
+            </div>
+
+            <div class = "butTitleDiv">
+                <div class = "titleHouse">
+                    <h3 class = "buttonTitle">Toy Cleaning</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class = "moreButtons">
+
+        <div class = "largeButton" id = "large-button1">
+
+            <div class = "butImgContainer">
+                <img class = "buttonImg" src = "/static/images/witches-clean.png">
+            </div>
+
+            <div class = "butTitleDiv">
+                <div class = "titleHouse">
+                    <h3 class = "buttonTitle">Team Clean</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class = "largeButton" id = "large-button2">
+
+            <div class = "butImgContainer">
+                <img class = "buttonImg" src = "/static/images/witch-shelf.png">
+            </div>
+
+            <div class = "butTitleDiv">
+                <div class = "titleHouse">
+                    <h3 class = "buttonTitle">Other</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class = "before-after">
+
+        <header class = "before-header">
+            <h1 class = "before-header-text">
+                Still Not Convinced? See Hex and Shine's work Below:
+            </h1>
+
+            <h3 class = "header-sub-text">
+                Hover over each image to see the same place after Hex and Shine has finished the job!
+            </h3>
+        </header>
+
+        <div class = "before-after-images" id = "gallery">
+            
+        </div>
+
+    </section>
+
+</div>
+
+<script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>
+
+</body>
+
+
