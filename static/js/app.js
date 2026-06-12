@@ -38,7 +38,7 @@ function showCard1() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1">Get Started</button>
+            <button class = "schedule-btn1" onclick = "goToCleaning()">Get Started</button>
         </div>
     </div>`;
 
@@ -184,3 +184,7 @@ photos.forEach(photo => {
     gallery.appendChild(card);
 
 });
+
+function goToCleaning() {
+    window.location.href = "/services/cleaning";
+}

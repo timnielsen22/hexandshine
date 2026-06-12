@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header>
+    <h1>Cleaning: Hex and Shine's Standard service</h1>
+</header>
+
+<section class="service-information">
+
+    <p>Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
+        it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
+        about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
+        area for notes.
+    </p>
+
+</section>
+
+<section class="cleaning-list">
+
+    <ul>
+        <li>sweep</li>
+        <li>mop</li>
+        <li>dust</li>
+        <li>vacuum</li>
+        <li>wipe switch plates</li>
+        <li>wipe outlets</li>
+    </ul>
+
+</section>
+
+<section class="information">
+    <p>
+        Process takes 2 - 3 hours and can be adjusted as required/specified
+        <br>
+        <br>
+        If interested please provide your email and a window of availability in the fields below
+        and you will be contacted promptly to schedule and confirm your appointment.
+    </p>
+</section>
+
+<section>
+    <label for="email">Email</label>
+    <input
+        type = "email"
+        id = "email"
+        autocomplete="email">
+</section>
+
+{% endblock %}
+
