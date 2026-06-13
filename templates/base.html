@@ -15,8 +15,32 @@
 <div class ="background"></div>
 
 <div class="siteContainer">
+    <header class = "nav-bar">
+
+    <div class = "site-message">
+        Quality cleaning so good, its like magic!
+    </div>
+
+    <div class = "nav-button-container">
+
+        <button class = "nav-button-design" onclick = "goHome()">
+            Home
+        </button>
+            
+        <button class = "nav-button-design" onclick = "goabout()">
+            About
+        </button>
+
+        <button class = "nav-button-design" onclick = "goContact()">
+            Contact
+        </button>
+
+    </div>
+</header>
+
 {% block content %}
 {% endblock %}
+
 </div>
 
 <script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>
