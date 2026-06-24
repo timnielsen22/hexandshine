@@ -1,50 +1,107 @@
 {% extends "base.html" %}
 {% block content %}
 
-<header class = "header">
-    <h1>Cleaning: Hex and Shine's Standard service</h1>
-</header>
+<main class="cleaning-page column-center">
 
-<section class="service-information">
+    <header class = "cleaning-header flex-center">
+        <h1>Cleaning: Hex and Shine's Standard service</h1>
+    </header>
 
-    <p>Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
-        it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
-        about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
-        area for notes.
-    </p>
+    <section class="service-information flex-center">
 
-</section>
+        <p class="page-font">Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
+            it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
+            about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
+            area for notes.
+        </p>
 
-<section class="cleaning-list">
+    </section>
 
-    <ul>
-        <li>sweep</li>
-        <li>mop</li>
-        <li>dust</li>
-        <li>vacuum</li>
-        <li>wipe switch plates</li>
-        <li>wipe outlets</li>
-    </ul>
+    <section class="cleaning-list flex-center">
 
-</section>
+        <ul class="page-font">
+            <li>sweep</li>
+            <li>mop</li>
+            <li>dust</li>
+            <li>vacuum</li>
+            <li>wipe switch plates</li>
+            <li>wipe outlets</li>
+        </ul>
 
-<section class="information">
-    <p>
-        Process takes 2 - 3 hours and can be adjusted as required/specified
-        <br>
-        <br>
-        If interested please provide your email and a window of availability in the fields below
-        and you will be contacted promptly to schedule and confirm your appointment.
-    </p>
-</section>
+    </section>
 
-<section>
-    <label for="email">Email</label>
-    <input
-        type = "email"
-        id = "email"
-        autocomplete="email">
-</section>
+    <section class="information page-font bold">
+        <p>
+            Process takes 2 - 3 hours and can be adjusted as required/specified
+            <br>
+            <br>
+            If interested please provide your email and a window of availability in the fields below
+            and you will be contacted promptly to schedule and confirm your appointment.
+        </p>
+    </section>
+
+    <section class="column-center calendar-section">
+
+            <div class = "email-section flex-center">
+                <label for="email">Email</label>
+                <input
+                    type = "email"
+                    id = "email"
+                    autocomplete="email">
+            </div>
+
+            <div class ="calendar-container">
+                <div id="calendar"></div>
+            </div>
+
+            <div class="button-container">
+                <button id="submitDays">Select Times</button>
+            </div>
+
+        </div>
+
+        <div id = "timeModal" class="pop-up hidden">
+        
+            <h3>Select Time Window</h3>
+
+            <div class="card-container">
+
+                <div class="card" id="card1">
+                    <h2></h2>
+                    <h2></h2>
+                    <select class = "time-selector">
+                    </select>
+                </div>
+
+                <div class="card" id="card2">
+                    <h2></h2>
+                    <h2></h2>
+                    <select class = "time-selector">
+                    </select>
+                </div>
+
+                <div class="card" id="card3">
+                    <h2></h2>
+                    <h2></h2>
+                    <select class = "time-selector">
+                    </select>
+                </div>
+
+            </div>
+
+            <textarea id="notes" placeholder="Notes..." style="width:100%; height:80px;"></textarea>
+
+            <button id="confirmBookingBtn">Confirm</button>
+        
+        </div>
+
+    </section>
+
+</main>
 
 {% endblock %}
 
+{% block script %}
+<script src="{{ url_for('static', filename='js/cleaning.js') }}"></script>
+<script src = "{{ url_for('static', filename = 'js/index.global.min.js') }}"></script>
+{% endblock %}

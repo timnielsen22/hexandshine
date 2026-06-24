@@ -328,3 +328,105 @@ body {
     height: 80%;
     object-fit: cover;
 }
+
+
+
+
+.page-font {
+    font-size: 1.2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cleaning-header {
+    margin-top: 6%;
+    flex: 1;
+    width: 80%;
+}
+
+.calendar-section {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 3%;
+}
+
+.email-section{
+    flex: .3;
+}
+
+.service-information { 
+    width: 80%;
+}
+
+.calendar-container {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.time-container {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.pop-up {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding:20px; 
+    border:1px solid #ccc; 
+    margin-top:10px;
+    background-color: blue;
+    z-index: 100;
+}
+
+.pop-up.hidden {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    width: 25%;
+    height: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#notes {
+    width: 50%;
+    height: 20%;
+}

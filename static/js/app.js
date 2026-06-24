@@ -188,3 +188,4 @@ photos.forEach(photo => {
 function goToCleaning() {
     window.location.href = "/services/cleaning";
 }
+
