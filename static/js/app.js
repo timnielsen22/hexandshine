@@ -189,3 +189,7 @@ function goToCleaning() {
     window.location.href = "/services/cleaning";
 }
 
+function returnHome() {
+    window.location.href = "/";
+}
+

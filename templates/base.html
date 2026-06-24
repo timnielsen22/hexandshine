@@ -24,7 +24,7 @@
 
         <div class = "nav-button-container">
 
-            <button class = "nav-button-design" onclick = "goHome()">
+            <button class = "nav-button-design" onclick = "returnHome()">
                 Home
             </button>
                 
@@ -40,11 +40,10 @@
 
     </header>
 
-</div>
-
-
 {% block content %}
 {% endblock %}
+
+</div>
 
 <script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>
 
