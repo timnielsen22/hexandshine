@@ -193,3 +193,6 @@ function returnHome() {
     window.location.href = "/";
 }
 
+function goAbout() {
+    window.location.href = "/nav/about";
+}

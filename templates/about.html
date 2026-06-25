@@ -1,7 +1,39 @@
-<main class="about-page">
+{% extends "base.html" %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main class="about-page column-center">
+
     <header class="about-header">
         <h1>About</h1>
     </header>
-    <section class="blurb-section">
+
+    <section class="about-blurb flex-center">
+        <p>My name is Vanessa, I grew up in San Diego CA and have lived here all of my life, Ive
+            ran a collection of businesses and have served as a property manager for quite some time. 
+            During all of my various jobs one thing has always stuck with me: 
+             I have a thing for clean, structure organization and cleanliness just tickles me
+            and I wanted to be able to share my cleaning and organization with that touch of sparkling and
+            smelly good for everyone to enjoy.
+            <br>
+            <br> In case you couldn't tell I also have a flare for the alternative, my favorite holiday is halloween
+            and my favorite style is eclectic, moody maximalist. I love collectors and currators and tend to the things
+            people hold dear with the utmost of care and precision. I believe in providing the best service I can, 
+            emphasizing quality and compassionate care of a home or business as if it were mine and I was having
+            the Queen of England for an extended stay.
+            <br>
+            <br>
+            This extends to far more than just my cleaning, I believe in quality care with any job I undertake, and those
+            who work with me extend the same values. It was with this mind set and the passion for the things I love 
+            that I created Hex and Shine. A full service cleaning business with a penchant for quality and a flash of
+            witchiness.
+        </p>
     </section>
+
 </main>
+
+{% endblock %}
