@@ -173,7 +173,7 @@ function fillCard() {
         const card = cards[i];
 
         card.children[0].textContent = appointments[i].dateSelected;
-        card.children[1].textContent = appointments[i].daySelected; 
+        card.children[2].textContent = appointments[i].daySelected; 
         
         appointments[i].selector.forEach(function (time) {
 
@@ -181,7 +181,7 @@ function fillCard() {
         option.value = time;
         option.textContent = time;
 
-        card.children[2].appendChild(option);
+        card.children[3].appendChild(option);
 
     });
 

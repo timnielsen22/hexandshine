@@ -1,43 +1,52 @@
 {% extends "base.html" %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename ='css/cleaning.css') }}">
+{% endblock %}
+
 {% block content %}
 
 <main class="cleaning-page column-center">
 
-    <header class = "cleaning-header flex-center">
-        <h1>Cleaning: Hex and Shine's Standard service</h1>
-    </header>
+    <section class="column-center gray-back">
 
-    <section class="service-information flex-center">
+        <header class = "cleaning-header flex-center">
+            <h1>Cleaning: Hex and Shine's Standard service</h1>
+        </header>
 
-        <p class="page-font">Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
-            it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
-            about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
-            area for notes.
-        </p>
+        <section class="service-information flex-center">
 
-    </section>
+            <p class="page-font">Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
+                it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
+                about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
+                area for notes.
+            </p>
 
-    <section class="cleaning-list flex-center">
+        </section>
 
-        <ul class="page-font">
-            <li>sweep</li>
-            <li>mop</li>
-            <li>dust</li>
-            <li>vacuum</li>
-            <li>wipe switch plates</li>
-            <li>wipe outlets</li>
-        </ul>
+        <section class="cleaning-list flex-center">
 
-    </section>
+            <ul class="page-font">
+                <li>sweep</li>
+                <li>mop</li>
+                <li>dust</li>
+                <li>vacuum</li>
+                <li>wipe switch plates</li>
+                <li>wipe outlets</li>
+            </ul>
 
-    <section class="information page-font bold">
-        <p>
-            Process takes 2 - 3 hours and can be adjusted as required/specified
-            <br>
-            <br>
-            If interested please provide your email and a window of availability in the fields below
-            and you will be contacted promptly to schedule and confirm your appointment.
-        </p>
+        </section>
+
+        <section class="information page-font bold">
+            <p>
+                Process takes 2 - 3 hours and can be adjusted as required/specified
+                <br>
+                <br>
+                If interested please provide your email and a window of availability in the fields below
+                and you will be contacted promptly to schedule and confirm your appointment.
+            </p>
+        </section>
+
     </section>
 
     <section class="column-center calendar-section">
@@ -60,38 +69,47 @@
 
         </div>
 
-        <div id = "timeModal" class="pop-up hidden">
+        <div id = "timeModal" class="pop-up column-center hidden full-size">
         
             <h3>Select Time Window</h3>
 
             <div class="card-container">
 
-                <div class="card" id="card1">
-                    <h2></h2>
-                    <h2></h2>
+                <div class="card column-center" id="card1">
+                    <h3></h3>
+                    <div class="flex-center">
+                        <img class="calendar-img" src="/static/images/calendar.png">
+                    </div>
+                    <h3></h3>
                     <select class = "time-selector">
                     </select>
                 </div>
 
-                <div class="card" id="card2">
-                    <h2></h2>
-                    <h2></h2>
+                <div class="card column-center" id="card2">
+                    <h3></h3>
+                    <div class="flex-center">
+                        <img class="calendar-img" src="/static/images/calendar.png">
+                    </div>
+                    <h3></h3>
                     <select class = "time-selector">
                     </select>
                 </div>
 
-                <div class="card" id="card3">
-                    <h2></h2>
-                    <h2></h2>
+                <div class="card column-center" id="card3">
+                    <h3></h3>
+                    <div class="flex-center">
+                        <img class="calendar-img" src="/static/images/calendar.png">
+                    </div>
+                    <h3></h3>
                     <select class = "time-selector">
                     </select>
                 </div>
 
             </div>
 
-            <textarea id="notes" placeholder="Notes..." style="width:100%; height:80px;"></textarea>
+            <textarea id="notes" class="shadow" placeholder="Enter any special notes or concerns about scheduling or your service here"></textarea>
 
-            <button id="confirmBookingBtn">Confirm</button>
+            <button id="confirmBookingBtn" class="confirm shadow">Confirm</button>
         
         </div>
 

@@ -1,0 +1,141 @@
+.page-font {
+    font-size: 1.2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gray-back {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding-bottom: 3%;
+}
+
+.shadow {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.3)
+}
+
+.cleaning-page {
+    position: relative;
+}
+
+.cleaning-header {
+    margin-top: 6%;
+    flex: 1;
+}
+
+.service-information {
+    width: 80%;
+}
+
+.calendar-section {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 3%;
+}
+
+.email-section{
+    flex: .3;
+}
+
+.calendar-container {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.time-container {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;  
+    margin-top:10px;
+    z-index: 100;
+    background: #ba57c7;
+    background: linear-gradient(184deg, rgba(186, 87, 199, 1) 37%, rgba(237, 221, 83, 1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.pop-up.hidden {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    gap: 8%;
+    background-color:rgba(221, 215, 215, 0.356);
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    height: 75%;
+    gap: 1%;
+    background-color: #e5c766;
+    border-radius: 15px;   
+    border: white solid 3px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.4);
+     
+}
+
+
+.calendar-img {
+    width: 25%;
+    height: auto;
+}
+
+#notes {
+    width: 75%;
+    height: 20%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+}
+
+.time-selector {
+    text-align: center;
+    width: 24%;
+    height: 11%;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.confirm {
+    width: 15%;
+    height: 8%;
+    margin-bottom: 3%;
+}
