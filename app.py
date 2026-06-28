@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, json, request
 
 app = Flask(__name__)
 
@@ -33,6 +33,26 @@ def contact_page():
 @ app.route("/services/toys")
 def toys_page():
     return render_template("toys.html")
+
+DATA_FILE = "data/appointments.json"
+
+@app.route("/api/save-appointment", methods=["POST"])
+def save_appointment():
+
+    new_appointment = request.get_json()
+
+    with open(DATA_FILE, "r") as file:
+        appointments = json.load(file)
+
+    appointments.append(new_appointment)
+
+    with open(DATA_FILE, "w") as file:
+        json.dump(appointments, file, indent=4)
+
+    return jsonify({
+        "success": True,
+        "message": "Appointment saved"
+    })
 
 if __name__ == "__main__":
     app.run(debug=True)

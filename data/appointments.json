@@ -1,0 +1,62 @@
+[
+    {
+        "contact": "poopmcgee@aol.com",
+        "dates": [
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30"
+        ],
+        "days": [
+            "Sunday",
+            "Monday",
+            "Tuesday"
+        ],
+        "notes": "Id like the work to be done around 4:30",
+        "times": [
+            "1:00",
+            "5:00",
+            "4:30"
+        ],
+        "type": "Cleaning: Hex and Shine's Standard service"
+    },
+    {
+        "contact": "",
+        "dates": [
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08"
+        ],
+        "days": [
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+        ],
+        "notes": "I like to work hard lol",
+        "times": [
+            "4:00",
+            "4:00",
+            "4:00"
+        ],
+        "type": "Cleaning: Hex and Shine's Standard service"
+    },
+    {
+        "contact": "billnye@yahoo.com",
+        "dates": [
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30"
+        ],
+        "days": [
+            "Sunday",
+            "Monday",
+            "Tuesday"
+        ],
+        "notes": "Please I need you at 4:30 cause I am gay",
+        "times": [
+            "4:30",
+            "4:30",
+            "4:30"
+        ],
+        "type": "Cleaning: Hex and Shine's Standard service"
+    }
+]

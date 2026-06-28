@@ -136,7 +136,11 @@ function weekendValues() {
     
 };
 
+let clientEmail = null;
+
 function fillCard() {
+
+    clientEmail = document.getElementById("email").value;
 
     const appointments = [
 
@@ -190,3 +194,39 @@ function fillCard() {
     }
 
 };
+
+function getItems() {
+
+
+    const clientNotes = document.getElementById("notes").value;
+
+    const appType = document.getElementById("serviceType").textContent;
+
+    const appTimes = [
+        document.getElementById("time1").value,
+        document.getElementById("time2").value,
+        document.getElementById("time3").value,
+    ]
+
+    const scheduled = {
+        contact: clientEmail,
+        type: appType,
+        dates: selectedDates,
+        days: days,
+        times: appTimes,
+        notes: clientNotes
+    }
+
+    fetch("/api/save-appointment", {
+
+        method: "POST",
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify(scheduled)
+
+    })
+
+}
