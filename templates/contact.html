@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/other.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main class="column-center contact">
+
+    <header class="header contact-head">
+        <h1>Contact Hex and Shine</h1>
+    </header>
+
+    <section class = "column-center contact-info flex1">
+
+        <label for="email">Email</label>
+        <input 
+        type="email"
+        autocomplete="email"
+        id="email">
+
+        <textarea class="contact-text" placeholder="Your message here..."></textarea>
+
+        <button>Submit</button>
+
+    </section>
+
+    <section class="flex1">
+
+        <h3>reddit</h3>
+        <h3>facebook</h3>
+        <h3>instagram</h3>
+
+    </section>
+
+    <section class="flex1">
+
+        <h2>Phone Number</h2>
+        <h2>Email</h2>
+
+    </section>
+
+</main>
+
+{% endblock %}

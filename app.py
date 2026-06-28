@@ -14,5 +14,25 @@ def service_one():
 def about_page():
     return render_template("about.html")
 
+@app.route("/services/landscaping")
+def landscaping_page():
+    return render_template("landscaping.html")
+
+@app.route("/services/teamclean")
+def teamclean_page():
+    return render_template("teamclean.html")
+
+@app.route("/services/other")
+def other_page():
+    return render_template("other.html")
+
+@app.route("/nav/contact")
+def contact_page():
+    return render_template("contact.html")
+
+@ app.route("/services/toys")
+def toys_page():
+    return render_template("toys.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

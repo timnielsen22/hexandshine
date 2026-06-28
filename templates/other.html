@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/other.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main class="other-main column-center">
+
+    <header class="header">
+        <h1>Other Services...</h1>
+    </header>
+
+    <section class="other-services">
+
+        <P class="other-text">
+            Hex and Shine is first and foremost a startup company with an emphtasis and priority on cleaning, that being said
+            every startup might need a little hand in starting up and Hex and Shine is still open to exploration, whether it be
+            organizing, cleaning, landscaping, delivery, moving, you name it. So if you have a job that needs doing, let us know what
+            that might be and how we can help. We will use our care, cleanliness and objective oriented services to make sure what
+            you need gets done right. If we can't help we will use our extensive collection of professional relationships to refer you
+            to someone who can. Let us know below...
+            
+        </P>
+
+    </section>
+
+    <section class="other-info column-center">
+
+        <label for="email">email</label>
+
+        <input class="other-input"
+            type="email"
+            id="email"
+            autocomplete="email"
+        >
+
+        <textarea class="other-text" placeholder="Enter your service needs here..."></textarea>
+
+        <button class="other-confirm">Confirm</button>
+
+    </section>
+
+</main>
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/other.js') }}"></script>
+{% endblock %}
+
+{% endblock %}

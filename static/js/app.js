@@ -71,7 +71,7 @@ function showCard2() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToLandscaping()">Get Started</button>
         </div>
     </div>`;
 
@@ -106,7 +106,7 @@ function showCard3() {
             </ul>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToToys()">Get Started</button>
         </div>
     </div>`;
 
@@ -139,7 +139,7 @@ function showCard4() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToTeamclean()">Get Started</button>
         </div>
     </div>`;
 
@@ -185,6 +185,12 @@ photos.forEach(photo => {
 
 });
 
+const otherPage = document.getElementById("large-button2")
+
+otherPage.addEventListener("click", function() {
+    window.location.href="/services/other";
+})
+
 function goToCleaning() {
     window.location.href = "/services/cleaning";
 }
@@ -195,4 +201,20 @@ function returnHome() {
 
 function goAbout() {
     window.location.href = "/nav/about";
+}
+
+function goToLandscaping () {
+    window.location.href="/services/landscaping";
+}
+
+function goToTeamclean() {
+    window.location.href="/services/teamclean";
+}
+
+function goContact() {
+    window.location.href = "/nav/contact";
+}
+
+function goToToys() {
+    window.location.href = "/services/toys";
 }
