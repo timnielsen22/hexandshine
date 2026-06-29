@@ -126,17 +126,30 @@ function showCard4() {
             <button class = "exit-button" onclick = "closeCard()">X</button>
         </header>
         <article class = "article-text">
-            <p class = "service-text">Hex and Shine's most popular and trusted service. Full scale cleaning, the way you want it done.</p>
-            <ul class = "main-list">
-                <li>dusting</li>
-                <li>Sweeping</li>
-                <li>Mopping</li>
-                <li>vacuuming</li>
-                <li>Degreasing</li>
-                <li>Scum Removal</li>
-                <li>Sanitizing</li>
-            </ul>
-            <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
+            <p class = "service-text">Our bigger faster service, designed around those who need it fast
+             or have an extensive project our team will get it done.  Its full scale cleaning, the way you want it done.</p>
+            <div class="row-center space-around">
+
+                <ul class = "main-list">
+                    <li>Dusting</li>
+                    <li>Sweeping</li>
+                    <li>Mopping</li>
+                    <li>vacuuming</li>
+                    <li>Degreasing</li>
+                    <li>Scum Removal</li>
+                    <li>Sanitizing</li>
+                </ul>
+
+                <ul class = "main-list">
+                    <li>Quicker service</li>
+                    <li>Bigger Projects</li>
+                    <li>Harder Projects</li>
+                    <li>Bigger Properties</li>
+                    <li>And More...</li>
+                </ul>
+
+            </div>
+            <h3 class = "price"> Rate: <span class = "bolded-price"> $25 Service Fee + $80 per hour </span>
         </article>
         <div class = "button-div">
             <button class = "schedule-btn1" onclick="goToTeamclean()">Get Started</button>

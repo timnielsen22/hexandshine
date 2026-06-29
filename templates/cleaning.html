@@ -16,30 +16,46 @@
 
         <section class="service-information flex-center">
 
-            <p class="page-font">Description of the contents to come within this page. Mainly the list of objectives while cleaning someones home and the timelengths
-                it will take to accomplish these objectives below that, and then when that list is done a calendar for availability plus a warning 
-                about making sure that the cleaning service was meant to be selected as well as an input for an email(this should be first) and a text
-                area for notes.
+            <p class="page-font">
+                Cleaning tends to be an uphill battle and with the ever changing landscape of our busy lives sometimes there just isn't 
+                the space to get things done how we truly would like and when we do get farther, its often short-lived, as the dust, grime,
+                and buildup of life comes back with a vengeance. That's why Hex and Shine would like to offer a helping hand, with this one 
+                time cleaning service you will see and feel the difference. whether you are a business owner with a grimy workspace in need of 
+                dedicated attention or you are simply looking for a quality clean around your home. Hex and Shine has the right tools, the right
+                care and a pinch of cleaning magic for any job.
+                <br>
+                <br>
+                <span class="bold">We work directly with our clients needs but our typical service includes: </span>
             </p>
 
         </section>
 
-        <section class="cleaning-list flex-center">
+        <section class="cleaning-list row-center">
 
-            <ul class="page-font">
-                <li>sweep</li>
-                <li>mop</li>
-                <li>dust</li>
-                <li>vacuum</li>
-                <li>wipe switch plates</li>
-                <li>wipe outlets</li>
+            <ul class="page-font flex1">
+                <li>Sweep</li>
+                <li>Mop</li>
+                <li>Dust</li>
+                <li>Vacuum</li>
+                <li>Wipe Switch Plates</li>
+                <li>Wipe Outlets</li>
+            </ul>
+
+            <ul class="page-font flex1">
+                <li>Surfaces Cleaned</li>
+                <li>Exterior Appliance Clean</li>
+                <li>Trash Taken Out</li>
+                <li>Toilet Cleaning</li>
+                <li>Shower/Bath Cleaning</li>
+                <li>Sinks and Faucets</li>
             </ul>
 
         </section>
 
         <section class="information page-font bold">
             <p>
-                Process takes 2 - 3 hours and can be adjusted as required/specified
+                Our typical Process takes 2 - 3 hours but can vary largely depending on condition and scope,the process can be adjusted as required/specified
+                as needed and communicated.
                 <br>
                 <br>
                 If interested please provide your email and a window of availability in the fields below
@@ -47,72 +63,74 @@
             </p>
         </section>
 
-    </section>
+    
 
-    <section class="column-center calendar-section">
+        <section class="column-center calendar-section">
 
-            <div class = "email-section flex-center">
-                <label for="email">Email</label>
-                <input
-                    type = "email"
-                    id = "email"
-                    autocomplete="email">
-            </div>
-
-            <div class ="calendar-container">
-                <div id="calendar"></div>
-            </div>
-
-            <div class="button-container">
-                <button id="submitDays">Select Times</button>
-            </div>
-
-        </div>
-
-        <div id = "timeModal" class="pop-up column-center hidden full-size">
-        
-            <h3>Select Time Window</h3>
-
-            <div class="card-container">
-
-                <div class="card column-center" id="card1">
-                    <h3></h3>
-                    <div class="flex-center">
-                        <img class="calendar-img" src="/static/images/calendar.png">
-                    </div>
-                    <h3></h3>
-                    <select class = "time-selector" id="time1">
-                    </select>
+                <div class = "email-section flex-center">
+                    <label class="label" for="email">Email</label>
+                    <input
+                        type = "email"
+                        id = "email"
+                        autocomplete="email">
                 </div>
 
-                <div class="card column-center" id="card2">
-                    <h3></h3>
-                    <div class="flex-center">
-                        <img class="calendar-img" src="/static/images/calendar.png">
-                    </div>
-                    <h3></h3>
-                    <select class = "time-selector" id="time2">
-                    </select>
+                <div class ="calendar-container">
+                    <div id="calendar"></div>
                 </div>
 
-                <div class="card column-center" id="card3">
-                    <h3></h3>
-                    <div class="flex-center">
-                        <img class="calendar-img" src="/static/images/calendar.png">
-                    </div>
-                    <h3></h3>
-                    <select class = "time-selector" id="time3">
-                    </select>
+                <div class="button-container">
+                    <button id="submitDays">Select Times</button>
                 </div>
 
             </div>
 
-            <textarea id="notes" class="shadow" placeholder="Enter any special notes or concerns about scheduling or your service here"></textarea>
+            <div id = "timeModal" class="pop-up column-center hidden full-size">
+            
+                <h3>Select Time Window</h3>
 
-            <button id="confirmBookingBtn" class="confirm shadow" onclick="getItems()">Confirm</button>
-        
-        </div>
+                <div class="card-container">
 
+                    <div class="card column-center" id="card1">
+                        <h3></h3>
+                        <div class="flex-center">
+                            <img class="calendar-img" src="/static/images/calendar.png">
+                        </div>
+                        <h3></h3>
+                        <select class = "time-selector" id="time1">
+                        </select>
+                    </div>
+
+                    <div class="card column-center" id="card2">
+                        <h3></h3>
+                        <div class="flex-center">
+                            <img class="calendar-img" src="/static/images/calendar.png">
+                        </div>
+                        <h3></h3>
+                        <select class = "time-selector" id="time2">
+                        </select>
+                    </div>
+
+                    <div class="card column-center" id="card3">
+                        <h3></h3>
+                        <div class="flex-center">
+                            <img class="calendar-img" src="/static/images/calendar.png">
+                        </div>
+                        <h3></h3>
+                        <select class = "time-selector" id="time3">
+                        </select>
+                    </div>
+
+                </div>
+
+                <textarea id="notes" class="shadow" placeholder="Enter any special notes or concerns about scheduling or your service here"></textarea>
+
+                <button id="confirmBookingBtn" class="confirm shadow" onclick="getItems()">Confirm</button>
+            
+            </div>
+
+        </section>
+    
     </section>
 
 </main>

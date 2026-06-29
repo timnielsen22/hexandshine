@@ -14,7 +14,6 @@
 .calendar-section {
     width: 100vw;
     height: 85vh;
-    margin-top: 3%;
 }
 
 .email-section{
@@ -70,6 +69,10 @@
      
 }
 
+.cleaning-list {
+    width: 75%;
+}
+
 
 .calendar-img {
     width: 25%;
@@ -98,4 +101,8 @@
     width: 15%;
     height: 8%;
     margin-bottom: 3%;
+}
+
+.information {
+    width: 80%;
 }
