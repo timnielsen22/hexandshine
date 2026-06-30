@@ -11,7 +11,7 @@
     <section class="column-center gray-back">
 
         <header class = "cleaning-header flex-center">
-            <h1>Team Clean</h1>
+            <h1 id="serviceType">Team Clean</h1>
         </header>
 
         <section class="service-information flex-center">
@@ -81,7 +81,7 @@
                         <img class="calendar-img" src="/static/images/calendar.png">
                     </div>
                     <h3></h3>
-                    <select class = "time-selector">
+                    <select class = "time-selector" id="time1">
                     </select>
                 </div>
 
@@ -91,7 +91,7 @@
                         <img class="calendar-img" src="/static/images/calendar.png">
                     </div>
                     <h3></h3>
-                    <select class = "time-selector">
+                    <select class = "time-selector" id="time2">
                     </select>
                 </div>
 
@@ -101,7 +101,7 @@
                         <img class="calendar-img" src="/static/images/calendar.png">
                     </div>
                     <h3></h3>
-                    <select class = "time-selector">
+                    <select class = "time-selector" id="time3">
                     </select>
                 </div>
 
@@ -109,7 +109,7 @@
 
             <textarea id="notes" class="shadow" placeholder="Enter any special notes or concerns about scheduling or your service here"></textarea>
 
-            <button id="confirmBookingBtn" class="confirm shadow">Confirm</button>
+            <button id="confirmBookingBtn" class="confirm shadow" onclick="getItems()">Confirm</button>
         
         </div>
 

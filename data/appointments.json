@@ -58,5 +58,43 @@
             "4:30"
         ],
         "type": "Cleaning: Hex and Shine's Standard service"
+    },
+    {
+        "contact": "bradpitt@yahoo.com",
+        "dates": [
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01"
+        ],
+        "days": [
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+        ],
+        "notes": "I have a big carpet that needs munching, I mean cleaning",
+        "times": [
+            "4:00",
+            "4:00",
+            "4:00"
+        ],
+        "type": "Landscaping and Yard Care"
+    },
+    {
+        "contact": "evamendez@yahoo.com",
+        "dates": [
+            "2026-06-29",
+            "2026-06-30"
+        ],
+        "days": [
+            "Monday",
+            "Tuesday"
+        ],
+        "notes": "Im Eva Mendez",
+        "times": [
+            "4:00",
+            "5:00",
+            ""
+        ],
+        "type": "Team Clean"
     }
 ]
