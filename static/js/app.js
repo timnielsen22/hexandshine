@@ -68,7 +68,7 @@ function showCard2() {
                 <li>Edging</li>
                 <li>Trimming</li>
             </ul>
-            <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
+            <h3 class = "price"> Rate: <span class = "bolded-price"> $25 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
             <button class = "schedule-btn1" onclick="goToLandscaping()">Get Started</button>

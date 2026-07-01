@@ -71,7 +71,11 @@
 
         <div id = "timeModal" class="pop-up column-center hidden full-size">
         
-            <h3>Select Time Window</h3>
+            <p class="timeText bold">Select the most convenient starting time for your cleaning service in each section below,
+                    leave any notes regarding special care needs or service requirements in the note area and 
+                    press confirm and we will get back to you reasonably quickly. REMINDER: Typical service
+                    length is 2-4 hours and cleaning is charged hourly at $80 per hour + $25 Service Fee.
+                <p>
 
             <div class="card-container">
 
@@ -109,11 +113,27 @@
 
             <textarea id="notes" class="shadow" placeholder="Enter any special notes or concerns about scheduling or your service here"></textarea>
 
-            <button id="confirmBookingBtn" class="confirm shadow" onclick="getItems()">Confirm</button>
+            <div class="row-center wide buttonHouse">
+                <button class="confirm shadow" onclick="cancelSchedule()">Cancel</button>
+                <button id="confirmBookingBtn" class="confirm shadow" onclick="getItems()">Confirm</button>
+            </div>
         
         </div>
 
     </section>
+
+    <div id="successPop" class="hidden successPop full-size gray-back flex-center">
+        <div class = "column-center successMessage">
+            <section class="flex-center wide">
+                <p>Thank you for scheduling, we will get back to you very shortly to
+                    confirm your scheduled service with you.
+                </p>
+            </section>
+            <section class="flex-center wide">
+                <button class="confirm" onclick="returnTeamClean()">Return to Services</button>
+            </section>
+        </div>
+    </div>
 
 </main>
 

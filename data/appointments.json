@@ -1,100 +1,82 @@
 [
     {
-        "contact": "poopmcgee@aol.com",
+        "contact": "hereIam@jail.com",
         "dates": [
-            "2026-06-28",
-            "2026-06-29",
-            "2026-06-30"
+            "2026-07-08",
+            "2026-07-16",
+            "2026-07-31"
         ],
         "days": [
-            "Sunday",
-            "Monday",
-            "Tuesday"
+            "Wednesday",
+            "Thursday",
+            "Friday"
         ],
-        "notes": "Id like the work to be done around 4:30",
+        "notes": "I do love to dance - said someone from Aydens show",
         "times": [
-            "1:00",
-            "5:00",
-            "4:30"
-        ],
-        "type": "Cleaning: Hex and Shine's Standard service"
-    },
-    {
-        "contact": "",
-        "dates": [
-            "2026-07-06",
-            "2026-07-07",
-            "2026-07-08"
-        ],
-        "days": [
-            "Monday",
-            "Tuesday",
-            "Wednesday"
-        ],
-        "notes": "I like to work hard lol",
-        "times": [
-            "4:00",
-            "4:00",
-            "4:00"
-        ],
-        "type": "Cleaning: Hex and Shine's Standard service"
-    },
-    {
-        "contact": "billnye@yahoo.com",
-        "dates": [
-            "2026-06-28",
-            "2026-06-29",
-            "2026-06-30"
-        ],
-        "days": [
-            "Sunday",
-            "Monday",
-            "Tuesday"
-        ],
-        "notes": "Please I need you at 4:30 cause I am gay",
-        "times": [
+            "3:00",
             "4:30",
-            "4:30",
-            "4:30"
+            "6:00"
         ],
         "type": "Cleaning: Hex and Shine's Standard service"
     },
     {
-        "contact": "bradpitt@yahoo.com",
+        "contact": "bobbyleejones@yahoo.com",
         "dates": [
-            "2026-06-29",
-            "2026-06-30",
-            "2026-07-01"
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03"
         ],
         "days": [
-            "Monday",
-            "Tuesday",
-            "Wednesday"
+            "Wednesday",
+            "Thursday",
+            "Friday"
         ],
-        "notes": "I have a big carpet that needs munching, I mean cleaning",
+        "notes": "Landscaping Request",
         "times": [
-            "4:00",
-            "4:00",
-            "4:00"
+            "3:00",
+            "3:00",
+            "3:00"
         ],
         "type": "Landscaping and Yard Care"
     },
     {
-        "contact": "evamendez@yahoo.com",
+        "contact": "blackbeardthe3rd@aol.com",
         "dates": [
-            "2026-06-29",
-            "2026-06-30"
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-09"
         ],
         "days": [
-            "Monday",
-            "Tuesday"
+            "Wednesday",
+            "Thursday",
+            "Thursday"
         ],
-        "notes": "Im Eva Mendez",
+        "notes": "I think I chose the Team Clean for this one",
         "times": [
-            "4:00",
-            "5:00",
-            ""
+            "3:00",
+            "4:30",
+            "5:00"
         ],
         "type": "Team Clean"
+    },
+    {
+        "contact": "hjdfskal",
+        "dates": [
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-10"
+        ],
+        "days": [
+            "Thursday",
+            "Friday",
+            "Friday"
+        ],
+        "notes": "",
+        "times": [
+            "3:30",
+            "4:00",
+            "3:00"
+        ],
+        "type": "Landscaping and Yard Care"
     }
 ]

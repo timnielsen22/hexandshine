@@ -36,7 +36,6 @@
     position: fixed;
     top: 0;
     left: 0;  
-    margin-top:10px;
     z-index: 100;
     background: #ba57c7;
     background: linear-gradient(184deg, rgba(186, 87, 199, 1) 37%, rgba(237, 221, 83, 1) 100%);
@@ -51,7 +50,7 @@
 .card-container {
     display: flex;
     width: 100%;
-    height: 60%;
+    height: 80%;
     align-items: center;
     gap: 8%;
     background-color:rgba(221, 215, 215, 0.356);
@@ -75,7 +74,7 @@
 
 
 .calendar-img {
-    width: 25%;
+    width: 20%;
     height: auto;
 }
 
@@ -97,12 +96,44 @@
     margin-bottom: 1%;
 }
 
+.buttonHouse {
+    justify-content: center;
+    gap: 3%;
+}
+
 .confirm {
-    width: 15%;
-    height: 8%;
+    width: 25%;
+    height: 70%;
     margin-bottom: 3%;
 }
 
 .information {
     width: 80%;
+}
+
+.timeText {
+    font-size: 1.3rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.successMessage {
+    width: 50%;
+    height: 50%;
+    background-color: lightGray;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 2%;
+}
+
+.successPop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+}
+.hidden {
+    display: none;
 }

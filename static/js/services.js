@@ -59,6 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        clientEmail = document.getElementById("email").value;
+
+        if(clientEmail === "") { 
+            alert("Please enter your email address");
+            return;
+        }
+
         const timeModal = document.getElementById("timeModal");
         timeModal.classList.toggle("hidden");
 
@@ -79,31 +86,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const cardInfo = {
 
-    weekday: ['2:45',
-    '3:00',
-    '3:30',
-    '4:00',
-    '4:30',
-    '5:00',
-    '6:00'
+    weekday: [
+        'start',
+        '2:45',
+        '3:00',
+        '3:30',
+        '4:00',
+        '4:30',
+        '5:00',
+        '6:00'
     ],
 
-    weekend: ['9:00',
-    '9:30',
-    '10:00',
-    '10:30',
-    '11:00',
-    '11:30',
-    '12:00',
-    '12:20',
-    '1:00',
-    '1:30',
-    '2:00',
-    '2:30',
-    '3:00',
-    '3:30',
-    '4:00',
-    '4:30',
+    weekend: [
+        'start',
+        '9:00',
+        '9:30',
+        '10:00',
+        '10:30',
+        '11:00',
+        '11:30',
+        '12:00',
+        '12:20',
+        '1:00',
+        '1:30',
+        '2:00',
+        '2:30',
+        '3:00',
+        '3:30',
+        '4:00',
+        '4:30',
     ]
 
 };
@@ -138,9 +149,9 @@ function weekendValues() {
 
 let clientEmail = null;
 
-function fillCard() {
 
-    clientEmail = document.getElementById("email").value;
+
+function fillCard() {
 
     const appointments = [
 
@@ -197,6 +208,7 @@ function fillCard() {
 
 function getItems() {
 
+    document.getElementById("confirmBookingBtn").disabled = true;
 
     const clientNotes = document.getElementById("notes").value;
 
@@ -229,4 +241,24 @@ function getItems() {
 
     })
 
+    document.getElementById("successPop").classList.toggle("hidden");
+}
+
+function cancelSchedule() {
+    
+    const timeModal = document.getElementById("timeModal");
+        timeModal.classList.toggle("hidden");
+
+}
+
+function returnCleaning() {
+    window.location.href = "/services/cleaning";
+}
+
+function returnLandscape() {
+    window.location.href = "/services/landscaping";
+}
+
+function returnTeamClean() {
+    window.location.href = "/services/teamclean";
 }
