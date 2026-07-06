@@ -32,13 +32,14 @@
 
         <label class="label" for="email">Email</label>
         <input 
+        class="emailInput"
         type="email"
         autocomplete="email"
-        id="email">
+        id="conPageEmail">
 
-        <textarea class="contact-text" placeholder="Your message here..."></textarea>
+        <textarea class="contact-text" id="conTextArea" placeholder="Your message here..."></textarea>
 
-        <button class = "submission-button round-out">Submit</button>
+        <button class = "submission-button round-out" onclick="getContactMessage()">Submit</button>
 
     </section>
 
@@ -48,6 +49,10 @@
         <h2>Email coming soon...</h2>
 
     </section>
+
+    {% block script %}
+        <script src="{{ url_for('static', filename='js/other.js') }}"></script>
+    {% endblock %}
 
 </main>
 

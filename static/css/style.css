@@ -436,6 +436,10 @@ body {
     font-size: 1.2rem;
 }
 
+.emailInput {
+    width: 25%;
+    height: 10%;
+}
 
 
 
