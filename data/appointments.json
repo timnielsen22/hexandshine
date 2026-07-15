@@ -139,5 +139,23 @@
             ""
         ],
         "type": "Landscaping and Yard Care"
+    },
+    {
+        "contact": "vanessaeastgate@yahoo.com",
+        "dates": [
+            "2026-07-07",
+            "2026-07-08"
+        ],
+        "days": [
+            "Tuesday",
+            "Wednesday"
+        ],
+        "notes": "need organic cleaners to be used",
+        "times": [
+            "4:00",
+            "3:30",
+            ""
+        ],
+        "type": "Cleaning: Hex and Shine's Standard service"
     }
 ]
