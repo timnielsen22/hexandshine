@@ -1,6 +1,9 @@
 from flask import Flask, request, jsonify, render_template, json, request
+import resend
 
 app = Flask(__name__)
+
+resend.api_key = re_a7UZPba9_ocFUEF3ACUciyTw2Uh7JKxKB
 
 @app.route("/")
 def home():
@@ -39,20 +42,41 @@ DATA_FILE = "data/appointments.json"
 @app.route("/api/save-appointment", methods=["POST"])
 def save_appointment():
 
-    new_appointment = request.get_json()
+    scheduled = request.get_json()
 
-    with open(DATA_FILE, "r") as file:
-        appointments = json.load(file)
+    dates = ", ".join(scheduled["dates"])
+    days = ", ".join(scheduled["days"])
+    times = ", ".join(scheduled["times"])
 
-    appointments.append(new_appointment)
 
-    with open(DATA_FILE, "w") as file:
-        json.dump(appointments, file, indent=4)
+    resend.Emails.send({
+        "from": "onboarding@resend.dev",
+        "to": "hexandshine@yahoo.com",
+        "subject": "New Cleaning Appointment Request",
+        "html": f"""
+            <h2>New Cleaning Appointment</h2>
+
+            <p><strong>Customer Email:</strong> {scheduled["contact"]}</p>
+
+            <p><strong>Service Type:</strong> {scheduled["type"]}</p>
+
+            <p><strong>Dates:</strong> {dates}</p>
+
+            <p><strong>Days:</strong> {days}</p>
+
+            <p><strong>Times:</strong> {times}</p>
+
+            <p><strong>Notes:</strong></p>
+            <p>{scheduled["notes"]}</p>
+        """
+    })
+
 
     return jsonify({
         "success": True,
-        "message": "Appointment saved"
+        "message": "Appointment request sent"
     })
+
 
 if __name__ == "__main__":
     app.run(debug=True)

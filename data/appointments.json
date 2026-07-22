@@ -157,5 +157,25 @@
             ""
         ],
         "type": "Cleaning: Hex and Shine's Standard service"
+    },
+    {
+        "contact": "nwjklgnrjkgwflnrekj",
+        "dates": [
+            "2026-07-22",
+            "2026-07-23",
+            "2026-07-24"
+        ],
+        "days": [
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "notes": "dfnmkelrwgnjtringwjtkrv",
+        "times": [
+            "3:30",
+            "3:30",
+            "start"
+        ],
+        "type": "Cleaning: Hex and Shine's Standard service"
     }
 ]

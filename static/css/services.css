@@ -3,8 +3,9 @@
 }
 
 .cleaning-header {
-    margin-top: 6%;
+    margin-top: 4rem;
     flex: 1;
+    text-align: center;
 }
 
 .service-information {
@@ -24,6 +25,12 @@
     width: 400px;
     height: 300px;
     margin-bottom: 100px;
+}
+
+@media (max-width: 420px) {
+    .calendar-container {
+        width: 95%;
+    }
 }
 
 .time-container {
@@ -57,6 +64,12 @@
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .card-container {
+        gap: 3%;
+    }
+}
+
 .card {
     width: 20%;
     height: 75%;
@@ -66,6 +79,13 @@
     border: white solid 3px;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.4);
      
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 30%;
+        transform: scale(0.85);
+    }
 }
 
 .cleaning-list {
@@ -90,7 +110,7 @@
 
 .time-selector {
     text-align: center;
-    width: 24%;
+    width: 75%;
     height: 11%;
     font-weight: bold;
     margin-bottom: 1%;
