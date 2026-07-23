@@ -1,9 +1,10 @@
-from flask import Flask, request, jsonify, render_template, json, request
+from flask import Flask, request, jsonify, render_template
 import resend
+import os
 
 app = Flask(__name__)
 
-resend.api_key = re_a7UZPba9_ocFUEF3ACUciyTw2Uh7JKxKB
+resend.api_key = os.environ.get("RESEND_API_KEY")
 
 @app.route("/")
 def home():
@@ -51,7 +52,7 @@ def save_appointment():
 
     resend.Emails.send({
         "from": "onboarding@resend.dev",
-        "to": "hexandshine@yahoo.com",
+        "to": "timnielsen22@yahoo.com",
         "subject": "New Cleaning Appointment Request",
         "html": f"""
             <h2>New Cleaning Appointment</h2>
