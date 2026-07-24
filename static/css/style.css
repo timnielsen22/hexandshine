@@ -286,6 +286,14 @@ body {
     }
 }
 
+@media (max-height: 790px) {
+    .infoTab {
+        overflow-y: auto;
+        scrollbar-width: none;
+        align-items: flex-start
+    }
+}
+
 .windowText {
     font-size: clamp(18px, 2vw, 25px);
     padding-right: 2%;
@@ -531,6 +539,9 @@ body {
     height: 2rem;
 }
 
+.secret { 
+    display: none;
+}
 
 
 
