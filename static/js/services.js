@@ -206,7 +206,7 @@ function fillCard() {
 
 };
 
-function getItems() {
+async function getItems() {
 
     document.getElementById("confirmBookingBtn").disabled = true;
 
@@ -229,19 +229,36 @@ function getItems() {
         notes: clientNotes
     }
 
-    fetch("/api/save-appointment", {
+    try {
 
-        method: "POST",
+        const response = await fetch("/api/save-appointment", {
 
-        headers: {
-            "Content-Type": "application/json"
-        },
+            method: "POST",
 
-        body: JSON.stringify(scheduled)
+            headers: {
+                "Content-Type": "application/json"
+            },
 
-    })
+            body: JSON.stringify(scheduled)
 
-    document.getElementById("successPop").classList.toggle("hidden");
+        })
+
+        if (!response.ok) {
+            throw new Error(`Server returned ${response.status}`);
+        }
+        
+        else {
+            document.getElementById("successPop").classList.toggle("hidden");
+        }
+
+    }
+
+    catch (err) {
+        console.error(err);
+        document.querySelector("#successPop p").textContent = "Request failed, please try again.";
+        document.getElementById("successPop").classList.toggle("hidden");
+    }
+
 }
 
 function cancelSchedule() {
