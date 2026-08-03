@@ -7,6 +7,8 @@
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <meta charset = "UTF-8">
 
+<title>{% block title %}Hex and Shine | House & Commercial Cleaning in San Diego County{% endblock %} </title>
+
 <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
 
 {% block page_css %}
@@ -17,9 +19,9 @@
 
 <div class ="background"></div>
 
-<div class="siteContainer">
+<main class="siteContainer">
 
-    <header class = "nav-bar shadow">
+    <nav class = "nav-bar shadow">
 
         <div class = "site-message row-center">
             Cleaning so well done, its like magic!
@@ -41,12 +43,12 @@
 
         </div>
 
-    </header>
+    </nav>
 
 {% block content %}
 {% endblock %}
 
-</div>
+</main>
 
 <script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>
 

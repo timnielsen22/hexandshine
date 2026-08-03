@@ -6,7 +6,6 @@
 
 .about-header {
     margin-top: 4rem;
-    padding: 1.5%;
     text-align: center;
 }
 
@@ -23,13 +22,16 @@
 }
 
 .map-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 35%;
     margin-top: 1.5%;
     justify-content: center;
 }
 
 @media (max-width: 900px) {
-    .row-center {
+    .map-row {
         flex-direction: column;
     }
 }

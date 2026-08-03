@@ -38,7 +38,7 @@ function showCard1() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $15 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1" onclick = "goToCleaning()">Get Started</button>
+            <button class = "schedule-btn1" onclick = "goToCleaning()">Schedule</button>
         </div>
     </div>`;
 
@@ -71,7 +71,7 @@ function showCard2() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $25 Service Fee + $40 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1" onclick="goToLandscaping()">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToLandscaping()">Schedule</button>
         </div>
     </div>`;
 
@@ -106,7 +106,7 @@ function showCard3() {
             </ul>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1" onclick="goToToys()">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToToys()">Schedule</button>
         </div>
     </div>`;
 
@@ -152,7 +152,7 @@ function showCard4() {
             <h3 class = "price"> Rate: <span class = "bolded-price"> $25 Service Fee + $80 per hour </span>
         </article>
         <div class = "button-div">
-            <button class = "schedule-btn1" onclick="goToTeamclean()">Get Started</button>
+            <button class = "schedule-btn1" onclick="goToTeamclean()">Schedule</button>
         </div>
     </div>`;
 
