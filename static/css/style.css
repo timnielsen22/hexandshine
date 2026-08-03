@@ -222,12 +222,12 @@ body {
 
 .header {
     display: flex;
-    min-height: 20vh;
+    min-height: 15vh;
     width: 100%;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 30px;
-    margin-bottom: 1%;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .headContainer {
@@ -308,6 +308,7 @@ body {
     .buttonContent {
         flex-direction: column;
         height: auto;
+        gap: 10px;
     }
 }
 
@@ -378,7 +379,8 @@ body {
         margin-bottom: 3%;
         height: auto;
         justify-content: flex-start;
-        padding-top: 3%;
+        padding-top: 10px;
+        gap: 10px;
     }
 }
 
