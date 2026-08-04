@@ -40,6 +40,11 @@ function showCard1() {
         <div class = "button-div">
             <button class = "schedule-btn1" onclick = "goToCleaning()">Schedule</button>
         </div>
+        <div class="flex-center wide">
+            <div class="service-image flex-center">
+                <img class="div-img" src="/static/images/standard-clean2.jpg">
+            </div>
+        </div>
     </div>`;
 
 }
@@ -72,6 +77,11 @@ function showCard2() {
         </article>
         <div class = "button-div">
             <button class = "schedule-btn1" onclick="goToLandscaping()">Schedule</button>
+        </div>
+        <div class="flex-center wide">
+            <div class="service-image flex-center">
+                <img class="div-img" src="/static/images/standard-clean1.jpg">
+            </div>
         </div>
     </div>`;
 
@@ -153,6 +163,12 @@ function showCard4() {
         </article>
         <div class = "button-div">
             <button class = "schedule-btn1" onclick="goToTeamclean()">Schedule</button>
+        </div>
+
+        <div class="flex-center wide">
+            <div class="service-image flex-center">
+                <img class="div-img" src="/static/images/standard-clean3.jpg">
+            </div>
         </div>
     </div>`;
 
